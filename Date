@@ -1,0 +1,6 @@
+(DT_WSTR,2)MONTH(@[User::MaxDate]) + "/" +
+(DT_WSTR,2)DAY(@[User::MaxDate]) + "/" +
+(DT_WSTR,4)YEAR(@[User::MaxDate]) + " " +
+RIGHT("0" + (DT_WSTR,2)DATEPART("hh",@[User::MaxDate]),2) + ":" +
+RIGHT("0" + (DT_WSTR,2)DATEPART("mi",@[User::MaxDate]),2) + ":" +
+RIGHT("0" + (DT_WSTR,2)DATEPART("ss",@[User::MaxDate]),2)
